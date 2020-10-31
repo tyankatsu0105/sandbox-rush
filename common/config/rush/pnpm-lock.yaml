@@ -1,0 +1,25 @@
+dependencies:
+  '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
+  typescript: 3.9.3
+lockfileVersion: 5.1
+packages:
+  /typescript/3.9.3:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+  'file:projects/my-toolchain.tgz':
+    dependencies:
+      typescript: 3.9.3
+    dev: false
+    name: '@rush-temp/my-toolchain'
+    resolution:
+      integrity: sha512-NgVkoYwrhTc8S55wBk0bP9Mn1p3+yTerr+7CSu1299z94dS25x9OLB1RJdfKPmzGFV67FeUKqIrNdYkH4MmhRg==
+      tarball: 'file:projects/my-toolchain.tgz'
+    version: 0.0.0
+registry: ''
+specifiers:
+  '@rush-temp/my-toolchain': 'file:./projects/my-toolchain.tgz'
+  typescript: 3.9.3

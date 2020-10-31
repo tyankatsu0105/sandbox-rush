@@ -12,5 +12,9 @@
   },
 }
 ```
+
+- もうNode.jsが14をLTSにしたから、`"nodeSupportedVersionRange": ">=12.13.0 <15.0.0",` にしておいてよさそう。
+  - defaultは`"nodeSupportedVersionRange": ">=12.13.0 <13.0.0",` になっているので、修正入るかな
+- monorepo管理対象のパッケージにscope付ける場合は、rush.jsonのpackageNameにもscopeつけないとエラーになる
 # LICENSE
 MIT
