@@ -21,6 +21,8 @@
   - ship.jsみたいに対話的にdefault branch指定できたら良さそう
 - common/git-hooksに書いた内容が.git/hooksにコピーされるので、huskyいらない！！！
   - hooksの内容がcommitできるという最高な機能
-- 
+- rushのautoinstallerでモジュールを自動でインストールさせられる
+  - package.json作ったら`rush update-autoinstaller`でpnpm-lock.yamlが作られる
+  - hooksと組み合わせることができる
 # LICENSE
 MIT
