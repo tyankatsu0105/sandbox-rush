@@ -440,6 +440,10 @@
     {
       "packageName": "@tyankatsu0105/my-toolchain",
       "projectFolder": "tools/my-toolchain"
+    },
+    {
+      "packageName": "@tyankatsu0105/my-controls",
+      "projectFolder": "libraries/my-controls"
     }
   ]
 }
