@@ -1,3 +1,3 @@
-const NAME = 'my-controls' as const
+const NAME = 'my-controls' as const;
 
-console.log(NAME);
+export const sayName = () => console.log(NAME);

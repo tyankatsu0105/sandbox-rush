@@ -1,3 +1,3 @@
-const NAME = 'my-toolchain' as const
+const NAME = 'my-toolchain' as const;
 
-console.log(NAME);
+export const sayName = () => console.log(NAME);
