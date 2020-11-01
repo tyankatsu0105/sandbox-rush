@@ -51,7 +51,6 @@
      * The default value is "local".
      */
     // "pnpmStore": "local",
-
     /**
      * If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM.
      * This causes "rush install" to fail if there are unsatisfied peer dependencies, which is
@@ -63,7 +62,6 @@
      * It is strongly recommended to set strictPeerDependencies=true.
      */
     // "strictPeerDependencies": true,
-
     /**
      * Configures the strategy used to select versions during installation.
      *
@@ -77,7 +75,6 @@
      * will recalculate all version selections.
      */
     // "resolutionStrategy": "fast",
-
     /**
      * If true, then `rush install` will report an error if manual modifications
      * were made to the PNPM shrinkwrap file without running "rush update" afterwards.
@@ -95,7 +92,6 @@
      * The default value is false.
      */
     // "preventManualShrinkwrapChanges": true,
-
     /**
      * If true, then `rush install` will use the PNPM workspaces feature to perform the
      * install.
@@ -196,29 +192,26 @@
    * and "nonbrowser-approved-packages.json".  See the Rush documentation for details.
    */
   "approvedPackagesPolicy": {
-  //   /**
-  //    * The review categories allow you to say for example "This library is approved for usage
-  //    * in prototypes, but not in production code."
-  //    *
-  //    * Each project can be associated with one review category, by assigning the "reviewCategory" field
-  //    * in the "projects" section of rush.json.  The approval is then recorded in the files
-  //    * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
-  //    * which are automatically generated during "rush update".
-  //    *
-  //    * Designate categories with whatever granularity is appropriate for your review process,
-  //    * or you could just have a single category called "default".
-  //    */
-    "reviewCategories": [
-      "libraries",
-      "tools"
-    ],
-  // 
-  //   /**
-  //    * A list of NPM package scopes that will be excluded from review.
-  //    * We recommend to exclude TypeScript typings (the "@types" scope), because
-  //    * if the underlying package was already approved, this would imply that the typings
-  //    * are also approved.
-  //    */
+    //   /**
+    //    * The review categories allow you to say for example "This library is approved for usage
+    //    * in prototypes, but not in production code."
+    //    *
+    //    * Each project can be associated with one review category, by assigning the "reviewCategory" field
+    //    * in the "projects" section of rush.json.  The approval is then recorded in the files
+    //    * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
+    //    * which are automatically generated during "rush update".
+    //    *
+    //    * Designate categories with whatever granularity is appropriate for your review process,
+    //    * or you could just have a single category called "default".
+    //    */
+    "reviewCategories": ["libraries", "tools"],
+    //
+    //   /**
+    //    * A list of NPM package scopes that will be excluded from review.
+    //    * We recommend to exclude TypeScript typings (the "@types" scope), because
+    //    * if the underlying package was already approved, this would imply that the typings
+    //    * are also approved.
+    //    */
     "ignoredNpmScopes": ["@types"]
   },
 
@@ -242,14 +235,12 @@
     //   "[^@]+@users\\.noreply\\.github\\.com",
     //   "travis@example\\.org"
     // ],
-
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
     // "sampleEmail": "mrexample@users.noreply.github.com",
-
     /**
      * The commit message to use when committing changes during 'rush publish'.
      *
@@ -276,7 +267,7 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    "url": "https://github.com/tyankatsu0105/sandbox-rush",
+    "url": "https://github.com/tyankatsu0105/sandbox-rush"
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
@@ -341,7 +332,7 @@
     //    * The folder name for this variant.
     //    */
     //   "variantName": "old-sdk",
-    // 
+    //
     //   /**
     //    * An informative description
     //    */
@@ -380,19 +371,19 @@
     //    * The NPM package name of the project (must match package.json)
     //    */
     //   "packageName": "my-app",
-    // 
+    //
     //   /**
     //    * The path to the project folder, relative to the rush.json config file.
     //    */
     //   "projectFolder": "apps/my-app",
-    // 
+    //
     //   /**
     //    * An optional category for usage in the "browser-approved-packages.json"
     //    * and "nonbrowser-approved-packages.json" files.  The value must be one of the
     //    * strings from the "reviewCategories" defined above.
     //    */
     //   "reviewCategory": "production",
-    // 
+    //
     //   /**
     //    * A list of local projects that appear as devDependencies for this project, but cannot be
     //    * locally linked because it would create a cyclic dependency; instead, the last published
@@ -401,20 +392,20 @@
     //   "cyclicDependencyProjects": [
     //     // "my-toolchain"
     //   ],
-    // 
+    //
     //   /**
     //    * If true, then this project will be ignored by the "rush check" command.
     //    * The default value is false.
     //    */
     //   // "skipRushCheck": false,
-    // 
+    //
     //   /**
     //    * A flag indicating that changes to this project will be published to npm, which affects
     //    * the Rush change and publish workflows. The default value is false.
     //    * NOTE: "versionPolicyName" and "shouldPublish" are alternatives; you cannot specify them both.
     //    */
     //   // "shouldPublish": false,
-    // 
+    //
     //   /**
     //    * An optional version policy associated with the project.  Version policies are defined
     //    * in "version-policies.json" file.  See the "rush publish" documentation for more info.
@@ -422,13 +413,13 @@
     //    */
     //   // "versionPolicyName": ""
     // },
-    // 
+    //
     // {
     //   "packageName": "my-controls",
     //   "projectFolder": "libraries/my-controls",
     //   "reviewCategory": "production"
     // },
-    // 
+    //
     // {
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
@@ -438,12 +429,14 @@
     {
       "packageName": "@tyankatsu0105/my-toolchain",
       "projectFolder": "tools/my-toolchain",
-      "reviewCategory": "tools"
+      "reviewCategory": "tools",
+      "shouldPublish": true
     },
     {
       "packageName": "@tyankatsu0105/my-controls",
       "projectFolder": "libraries/my-controls",
-      "reviewCategory": "libraries"
+      "reviewCategory": "libraries",
+      "shouldPublish": false
     }
   ]
 }
