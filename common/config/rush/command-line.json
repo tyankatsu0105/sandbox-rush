@@ -17,6 +17,22 @@
       "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
       "autoinstallerName": "rush-prettier",
       "shellCommand": "pretty-quick --staged"
+    },
+    {
+      "commandKind": "global",
+      "name": "import-strings",
+      "summary": "Imports translated strings into each project.",
+      "description": "Requests translated strings from the translation service and imports them into each project.",
+      "shellCommand": "echo 'hoge'"
+    },
+    {
+      "commandKind": "global",
+
+      "name": "deploy-app",
+      "summary": "Deploys the application",
+      "description": "Run this command to deploy the application",
+
+      "shellCommand": "node common/scripts/deploy-app.js"
     }
     // {
     //   /**
@@ -164,6 +180,54 @@
    * For example, you might define a "--production" parameter for the "rush build" command.
    */
   "parameters": [
+    {
+      /**
+       * (Required) Determines the type of custom parameter.
+       * A "flag" is a custom command-line parameter whose presence acts as an on/off switch.
+       */
+      "parameterKind": "flag",
+      "longName": "--ship",
+      "shortName": "-s",
+      "description": "Perform a production build, including minification and localization steps",
+      "associatedCommands": [ "build", "rebuild", "import-strings" ],
+    },
+
+    {
+      "parameterKind": "flag",
+      "longName": "--minimal",
+      "shortName": "-m",
+      "description": "Perform a fast build, which disables certain tasks such as unit tests and linting",
+      "associatedCommands": [ "build", "rebuild" ]
+    },
+    {
+      /**
+       * (Required) Determines the type of custom parameter.
+       * "A "choice" is a custom command-line parameter whose argument must be chosen from a list
+       * of allowable alternatives.
+       */
+      "parameterKind": "choice",
+      "longName": "--locale",
+      "description": "Selects a single instead of the default locale (en-us) for non-ship builds or all locales for ship builds.",
+      "associatedCommands": [ "build", "rebuild", "import-strings" ],
+      "alternatives": [
+        {
+          "name": "en-us",
+          "description": "US English"
+        },
+        {
+          "name": "fr-fr",
+          "description": "French (France)"
+        },
+        {
+          "name": "es-es",
+          "description": "Spanish (Spain)"
+        },
+        {
+          "name": "zh-cn",
+          "description": "Chinese (China)"
+        }
+      ]
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom parameter.
