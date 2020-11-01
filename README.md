@@ -19,5 +19,8 @@
 - rootにpackage.jsonがないので、CIで動かすときにRushのbin解決どうするのかと思いきや、`rush init`したときにできた、`common/scripts/install-run-rush.js`が
 - CIのfetch先がmasterでベタ書きされているので、mainとかがdefaultブランチだったら書き換える必要あり
   - ship.jsみたいに対話的にdefault branch指定できたら良さそう
+- common/git-hooksに書いた内容が.git/hooksにコピーされるので、huskyいらない！！！
+  - hooksの内容がcommitできるという最高な機能
+- 
 # LICENSE
 MIT
