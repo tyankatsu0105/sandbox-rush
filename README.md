@@ -23,5 +23,10 @@
 - rushのautoinstallerでモジュールを自動でインストールさせられる
   - package.json作ったら`rush update-autoinstaller`でpnpm-lock.yamlが作られる
   - hooksと組み合わせることができる
+- `rush check`から進めなくなった。
+  - 差分ファイルないよと言われる
+  - devブランチとかに切り替えてやったら進めるけど、これでいいのかドキュメントに書いてない
+- `rush check`が`ensureConsistentVersions`を尊重しない
+  - バージョン違う指摘がされて終わり
 # LICENSE
 MIT
