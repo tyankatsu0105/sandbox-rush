@@ -11,8 +11,5 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "3.9.3"
-  },
-  "dependencies": {
-    "@tyankatsu0105/my-controls": "~0.0.0"
   }
 }
