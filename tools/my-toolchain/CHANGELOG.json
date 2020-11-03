@@ -1,0 +1,20 @@
+{
+  "name": "@tyankatsu0105/my-toolchain",
+  "entries": [
+    {
+      "version": "0.0.1",
+      "tag": "@tyankatsu0105/my-toolchain_v0.0.1",
+      "date": "Tue, 03 Nov 2020 03:55:08 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update meta info"
+          },
+          {
+            "comment": "Change type of LICENSE"
+          }
+        ]
+      }
+    }
+  ]
+}

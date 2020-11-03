@@ -1,6 +1,6 @@
 {
   "name": "@tyankatsu0105/my-toolchain",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This is a sample package",
   "main": "dist/index.js",
   "scripts": {
