@@ -23,11 +23,22 @@
 - rushのautoinstallerでモジュールを自動でインストールさせられる
   - package.json作ったら`rush update-autoinstaller`でpnpm-lock.yamlが作られる
   - hooksと組み合わせることができる
-- `rush check`から進めなくなった。
-  - 差分ファイルないよと言われる
-  - devブランチとかに切り替えてやったら進めるけど、これでいいのかドキュメントに書いてない
 - `rush check`が`ensureConsistentVersions`を尊重しない
-  - バージョン違う指摘がされて終わり
+
+# 流れ
+1. rush initでmonorepoの大元を作る
+1. パッケージを追加したら`rush update`でプロジェクトを認識。`rush.json`を変更して管理対象プロジェクトの設定。
+1. 作業ブランチを作って作業する
+   - 作業し終わったら`rush change`でそのcommitをchangelogに出すためのmessageを書く
+   - jsonファイルが出るので`rush change`とかcommit message作ってpushする
+     - 参考 : https://github.com/microsoft/rushstack/commit/2d611b879f6dee4ba350662002b00d92c3dda530
+     - master/mainと差分があったらrush change推奨なので、rush initのときのTravisCIみたいに `rush change -v`してくれるCI環境あると便利
+     - pushしてmaster/mainブランチに取り込む
+1. master/mainでpullする
+1. master/mainで`rush update -a`でchangelog生成する
+   -  参考 : https://github.com/microsoft/rushstack/commit/7d86f39411e77087115c71648a5c31ab3a6efd4f
+   -  `Deleting change files and updating change logs for package updates.`みたいなcommit messageでpush
+2. `rush publish -p -n npmToken --add-commit-details --include-all --set-access-level public`でpublish
 
 
 # Packages
