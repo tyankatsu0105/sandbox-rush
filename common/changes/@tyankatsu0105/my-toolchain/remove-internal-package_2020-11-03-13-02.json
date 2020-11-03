@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@tyankatsu0105/my-toolchain",
+      "comment": "Remove internal package",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@tyankatsu0105/my-toolchain",
+  "email": "frips.ryilsufupe+dev@gmail.com"
+}
