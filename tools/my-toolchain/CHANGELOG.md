@@ -1,6 +1,13 @@
 # Change Log - @tyankatsu0105/my-toolchain
 
-This log was last generated on Tue, 03 Nov 2020 03:55:08 GMT and should not be manually modified.
+This log was last generated on Tue, 03 Nov 2020 12:54:03 GMT and should not be manually modified.
+
+## 0.0.2
+Tue, 03 Nov 2020 12:54:03 GMT
+
+### Patches
+
+- Add @tyankatsu0105/my-controls
 
 ## 0.0.1
 Tue, 03 Nov 2020 03:55:08 GMT
