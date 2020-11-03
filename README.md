@@ -28,5 +28,12 @@
   - devブランチとかに切り替えてやったら進めるけど、これでいいのかドキュメントに書いてない
 - `rush check`が`ensureConsistentVersions`を尊重しない
   - バージョン違う指摘がされて終わり
+
+
+# Packages
+|Folder|Version|Changelog|Package|
+|:--|:--|:--|:--|
+|[/tools/my-toolchain](./tools/my-toolchain)|[![npm version](https://badge.fury.io/js/%40tyankatsu0105%2Fmy-toolchain.svg)](https://badge.fury.io/js/@tyankatsu0105/my-toolchain)|[changelog](./tools/my-toolchain/CHANGELOG.md)|[@tyankatsu0105/my-toolchain](https://www.npmjs.com/package/@tyankatsu0105/my-toolchain)|
+
 # LICENSE
 MIT
