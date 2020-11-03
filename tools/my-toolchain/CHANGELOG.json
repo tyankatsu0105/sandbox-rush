@@ -2,6 +2,18 @@
   "name": "@tyankatsu0105/my-toolchain",
   "entries": [
     {
+      "version": "0.0.3",
+      "tag": "@tyankatsu0105/my-toolchain_v0.0.3",
+      "date": "Tue, 03 Nov 2020 13:03:26 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Remove internal package"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.2",
       "tag": "@tyankatsu0105/my-toolchain_v0.0.2",
       "date": "Tue, 03 Nov 2020 12:54:03 GMT",
