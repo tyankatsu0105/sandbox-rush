@@ -23,7 +23,11 @@
 - rushのautoinstallerでモジュールを自動でインストールさせられる
   - package.json作ったら`rush update-autoinstaller`でpnpm-lock.yamlが作られる
   - hooksと組み合わせることができる
-- `rush check`が`ensureConsistentVersions`を尊重しない
+- ensureConsistentVersionsの例外で指定する`allowedAlternativeVersions`は、許可する各バージョンの指定を配列で入れる
+  - 例）packageA => typescript: "4.0.2" packageB => typescript: "4.0.2" packageC => typescript: "3.9.3"
+  - packageCだけ別バージョン入れたい場合、`"allowedAlternativeVersions": {"typescript": ["3.9.3"]}`
+  - 例）packageA => typescript: "4.0.2" packageB => typescript: "4.0.2" packageC => typescript: "^3.9.3"
+  - packageCだけ別バージョン入れたい場合、`"allowedAlternativeVersions": {"typescript": ["^3.9.3"]}`
 
 # 流れ
 1. rush initでmonorepoの大元を作る
