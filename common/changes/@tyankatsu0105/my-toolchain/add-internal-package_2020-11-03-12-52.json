@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@tyankatsu0105/my-toolchain",
+      "comment": "Add @tyankatsu0105/my-controls",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@tyankatsu0105/my-toolchain",
+  "email": "frips.ryilsufupe+dev@gmail.com"
+}
